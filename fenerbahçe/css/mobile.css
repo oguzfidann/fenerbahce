@@ -1,0 +1,9 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}

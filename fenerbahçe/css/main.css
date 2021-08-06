@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-image: url(/images/stadium1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  max-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-column: span 2;
+}
+
+.logo img {
+  width: 160px;
+  cursor: pointer;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  font-family: monospace;
+  font-size: x-large;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  color: #1ca300;
+  background: gold;
+  box-shadow: 0 0 15px #1ca300;
+}
+.menu ul li a {
+  color: gold;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px gold;
+}
+
+.main {
+  grid-column: span 2;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.text h1 {
+  font-size: 50px;
+  color: gold;
+  text-shadow: 0 0 15px gold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.text p {
+  color: #6eb767;
+  text-shadow: 0 0 15px white;
+  font-size: large;
+}
+
+.season {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: space-around;
+}
+
+.big-img {
+  position: relative;
+  width: 435px;
+  height: 245px;
+  box-shadow: 0 0 30px gold;
+  border-radius: 40px;
+  margin-top: 1rem;
+}
+
+.big-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  mix-blend-mode: soft-light;
+  border-radius: 40px;
+}
+
+.big-img iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+button {
+  font-size: large;
+  font-weight: bold;
+  font-family: monospace;
+  background: gold;
+  color: white;
+  height: 75px;
+  width: 80px;
+  box-shadow: 0 0 30px darkblue;
+  border: solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 1rem;
+}
+
+button:hover {
+  transform: translateY(-20%);
+}
+
+.forma {
+  width: 60px;
+}
